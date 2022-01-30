@@ -69,17 +69,17 @@ Due to the foreign key constraint, students needed to be INSERTed before INSERTi
 This should not work, because there is no students with sid of ‘s5’
 
 6.  Make sure to inspect data in the tables.
-
-SELECT \* FROM Students;
-
+```
+SELECT * FROM Students;
+```
 &
-
-SELECT \* FROM Enrolled;
-
+```
+SELECT * FROM Enrolled;
+```
 7.  Try to delete student with sid=‘s3’
-
+```
 DELETE  FROM Students WHERE sid='s3';
-
+```
 The command could not be executed, due to the foreign key constraint. Mysql reports the following error:
 
 >     Error Code: 1451. Cannot delete or update a parent row: a foreign key constraint fails (`test`.`enrolled`, CONSTRAINT `enrolled_ibfk_1`  FOREIGN KEY (`sid`) REFERENCES `students` (`sid`))
@@ -103,12 +103,12 @@ DELETE  FROM Students WHERE sid='s3';
 
 10.  Inspect data in the tables.
 ```
-SELECT \* FROM Students;
+SELECT * FROM Students;
 ```
 
 &
 ```
-SELECT \* FROM Enrolled;
+SELECT * FROM Enrolled;
 ```
 
 **_NOTE:_**  
@@ -150,11 +150,11 @@ We have tested the default behavior for foreign keys.
 
 12.  Inspect the tables:
 ```
-SELECT \* FROM Students;
+SELECT * FROM Students;
 ```
 &
 ```
-SELECT \* FROM Enrolled;
+SELECT * FROM Enrolled;
 ```
 13.  However, because we are using cascade in the foreign key, we can delete student with sid=`s3`.
 ```
@@ -162,9 +162,9 @@ DELETE  FROM Students WHERE sid='s3';
 ```
 14.  Inspect the tables:
 ```
-SELECT \* FROM Students;
+SELECT * FROM Students;
 ```
 &
 ```
-SELECT \* FROM Enrolled;
+SELECT * FROM Enrolled;
 ```
