@@ -10,14 +10,18 @@ Step 1: Creating Relational Schema
 
 1.  Remove the student table, if exists.
 
+'''
 DROP TABLE IF EXISTS Students;
+'''
 
 2.  Removing the enrolled table, if exists
-
+'''
 DROP TABLE IF EXISTS Enrolled;
+'''
 
 3.  Create the `Enrolled` and `Students` table, only if they do not exist.
 
+'''
    CREATE TABLE IF NOT EXISTS Students (
   		sid char(10),
   	    name char(20),
@@ -31,6 +35,7 @@ DROP TABLE IF EXISTS Enrolled;
   PRIMARY KEY (sid,cid),
   FOREIGN KEY (sid) references students(sid)
   );
+  '''
 
 **_NOTE:_**  
 You need to create the table `Students` before table `Enrolled`. Why?
