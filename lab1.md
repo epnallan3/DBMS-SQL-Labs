@@ -146,24 +146,25 @@ We have tested the default behavior for foreign keys.
 	INSERT INTO Enrolled VALUES('s3','cs101', 'A-');
 	INSERT INTO Enrolled VALUES('s3','cs102', 'C');
 	INSERT INTO Enrolled VALUES('s3','cs105', 'B');
-	```
+```
 
 12.  Inspect the tables:
-
+```
 SELECT \* FROM Students;
-
+```
 &
-
+```
 SELECT \* FROM Enrolled;
-
+```
 13.  However, because we are using cascade in the foreign key, we can delete student with sid=`s3`.
-
+```
 DELETE  FROM Students WHERE sid='s3';
-
+```
 14.  Inspect the tables:
-
+```
 SELECT \* FROM Students;
-
+```
 &
-
+```
 SELECT \* FROM Enrolled;
+```
