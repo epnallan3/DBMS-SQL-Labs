@@ -10,18 +10,18 @@ Step 1: Creating Relational Schema
 
 1.  Remove the student table, if exists.
 
-'''
+```
 DROP TABLE IF EXISTS Students;
-'''
+```
 
 2.  Removing the enrolled table, if exists
-'''
+```
 DROP TABLE IF EXISTS Enrolled;
-'''
+```
 
 3.  Create the `Enrolled` and `Students` table, only if they do not exist.
 
-'''
+```
    CREATE TABLE IF NOT EXISTS Students (
   		sid char(10),
   	    name char(20),
@@ -35,13 +35,14 @@ DROP TABLE IF EXISTS Enrolled;
   PRIMARY KEY (sid,cid),
   FOREIGN KEY (sid) references students(sid)
   );
-  '''
+  ```
 
 **_NOTE:_**  
 You need to create the table `Students` before table `Enrolled`. Why?
 
 4.  Insert data into tables
 
+```
 INSERT INTO Students VALUES('s1', 'student1', 3.1);
 INSERT INTO Students VALUES('s2', 'student2', 3.2);
 INSERT INTO Students VALUES('s3', 'student3', 2.2);
@@ -56,6 +57,7 @@ INSERT INTO Enrolled VALUES('s2','cs103', 'A');
 INSERT INTO Enrolled VALUES('s3','cs101', 'A-');
 INSERT INTO Enrolled VALUES('s3','cs102', 'C');
 INSERT INTO Enrolled VALUES('s3','cs105', 'B');
+```
 
 **_NOTE:_**  
 Due to the foreign key constraint, students needed to be INSERTed before INSERTing the enrollment in the the Enrolled table.
@@ -85,29 +87,35 @@ The command could not be executed, due to the foreign key constraint. Mysql repo
 
 8.  However, you can delete student `s4` as there are no records (in the enrolled table).
 
+```
 DELETE  FROM Students WHERE sid='s4';
+```
 
 9.  To Delete student with sid ‘s3’, first we delete his(her) enrolled courses
-
+```
 DELETE  FROM Enrolled WHERE sid='s3';
+```
 
 Then, you can delete the student
-
+```
 DELETE  FROM Students WHERE sid='s3';
+```
 
 10.  Inspect data in the tables.
-
+```
 SELECT \* FROM Students;
+```
 
 &
-
+```
 SELECT \* FROM Enrolled;
+```
 
 **_NOTE:_**  
 We have tested the default behavior for foreign keys.
 
 11.  We will create a foreign key with cascades:
-
+```
  DROP TABLE IF EXISTS Enrolled ;
  DROP TABLE IF EXISTS Students;
  CREATE TABLE IF NOT EXISTS Students (
@@ -138,6 +146,7 @@ We have tested the default behavior for foreign keys.
 	INSERT INTO Enrolled VALUES('s3','cs101', 'A-');
 	INSERT INTO Enrolled VALUES('s3','cs102', 'C');
 	INSERT INTO Enrolled VALUES('s3','cs105', 'B');
+	```
 
 12.  Inspect the tables:
 
