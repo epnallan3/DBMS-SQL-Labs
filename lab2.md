@@ -1,6 +1,6 @@
 # Lab-2
 
-Disclaimer[^1
+Disclaimer[^1]
 
 
 ## Overview
