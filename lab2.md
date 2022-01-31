@@ -1,29 +1,5 @@
+# Lab-2[^1]
 
-
-
-# Lab-2 [^1]
-
-## Outline
-  - [Overview](#overview)
-  - [A few SQL statements](#a-few-sql-statements)
-  - [In class mini-lecture](#in-class-mini-lecture)
-  - [The `SELECT` statement](#the-select-statement)
-    - [Creating the table](#creating-the-table)
-    - [Giving it some data](#giving-it-some-data)
-      - [Use `INSERT`](#use-insert)
-      - [Basic form of `SELECT`](#basic-form-of-select)
-      - [Renaming a column](#renaming-a-column)
-      - [Getting fancy with columns](#getting-fancy-with-columns)
-      - [The `WHERE` clause](#the-where-clause)
-      - [Logicals in the `WHERE` clause](#logicals-in-the-where-clause)
-      - [The `LIMIT` clause](#the-limit-clause)
-      - [The keyword `DISTINCT`](#the-keyword-distinct)
-      - [The REAL power:  **JOINS**](#the-real-power--joins)
-      - [The `EXPLAIN` keyword](#the-explain-keyword)
-  - [Put together a small group](#put-together-a-small-group)
-  - [An SQL tutorial](#an-sql-tutorial)
-  - [Checklist of what to do](#checklist-of-what-to-do)
-  - [References](#references)
 
 ## Overview
 
