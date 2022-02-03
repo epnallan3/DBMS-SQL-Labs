@@ -1,4 +1,4 @@
-#Lab 1.5 
+# Lab 1.5 
 ## Lecture Example
 
 
@@ -19,7 +19,7 @@ insert into product values('SingleTouch', 149.99, 'Photography', 'Canon')
 
 ```
 
-Exercise #1
+### Exercise 1
 Try writing a query to get an output table of all the products with "Touch" in the name, showing just their name and price, 
 and sorted alphabetically by manufacturer.
 
@@ -28,7 +28,7 @@ Next, write a query that returns the distinct names of manufacturers that make p
 
 
 
-Exercise #2
+### Exercise 2
 
 Try some of these queries but first guess what they return.
 
