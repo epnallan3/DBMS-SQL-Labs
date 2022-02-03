@@ -2,7 +2,7 @@
 ## Lecture Example
 
 
-```
+```sql
 CREATE  database Lecture3;
 USE Lecture3; 
 
@@ -32,7 +32,7 @@ Exercise #2
 
 Try some of these queries but first guess what they return.
 
-```
+```sql
 SELECT DISTINCT category FROM product ORDER BY category;
 SELECT category FROM product ORDER BY pname;
 SELECT DISTINCT category FROM product ORDER BY pname;
