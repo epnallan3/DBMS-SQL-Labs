@@ -12,18 +12,18 @@ Step 1: Creating Relational Schema
 
 1.  Remove the student table, if exists.
 
-```
+```sql
 DROP TABLE IF EXISTS Students;
 ```
 
 2.  Removing the enrolled table, if exists
-```
+```sql
 DROP TABLE IF EXISTS Enrolled;
 ```
 
 3.  Create the `Enrolled` and `Students` table, only if they do not exist.
 
-```
+```sql
    CREATE TABLE IF NOT EXISTS Students (
   		sid char(10),
   	    name char(20),
@@ -44,7 +44,7 @@ You need to create the table `Students` before table `Enrolled`. Why?
 
 4.  Insert data into tables
 
-```
+```sql
 INSERT INTO Students VALUES('s1', 'student1', 3.1);
 INSERT INTO Students VALUES('s2', 'student2', 3.2);
 INSERT INTO Students VALUES('s3', 'student3', 2.2);
@@ -71,15 +71,15 @@ Due to the foreign key constraint, students needed to be INSERTed before INSERTi
 This should not work, because there is no students with sid of ‘s5’
 
 6.  Make sure to inspect data in the tables.
-```
+```sql
 SELECT * FROM Students;
 ```
 &
-```
+```sql
 SELECT * FROM Enrolled;
 ```
 7.  Try to delete student with sid=‘s3’
-```
+```sql
 DELETE  FROM Students WHERE sid='s3';
 ```
 The command could not be executed, due to the foreign key constraint. Mysql reports the following error:
@@ -89,12 +89,12 @@ The command could not be executed, due to the foreign key constraint. Mysql repo
 
 8.  However, you can delete student `s4` as there are no records (in the enrolled table).
 
-```
+```sql
 DELETE  FROM Students WHERE sid='s4';
 ```
 
 9.  To Delete student with sid ‘s3’, first we delete his(her) enrolled courses
-```
+```sql
 DELETE  FROM Enrolled WHERE sid='s3';
 ```
 
@@ -117,7 +117,7 @@ SELECT * FROM Enrolled;
 We have tested the default behavior for foreign keys.
 
 11.  We will create a foreign key with cascades:
-```
+```sql
  DROP TABLE IF EXISTS Enrolled ;
  DROP TABLE IF EXISTS Students;
  CREATE TABLE IF NOT EXISTS Students (
@@ -151,7 +151,7 @@ We have tested the default behavior for foreign keys.
 ```
 
 12.  Inspect the tables:
-```
+```sql
 SELECT * FROM Students;
 ```
 &
