@@ -57,6 +57,7 @@ AND  p1.factory_loc = 'US'
 AND  p2.factory_loc = 'China';
 ```
 ### Example 
+
 ```sql
 DROP table if exists company;
 DROP table if exists Product;
@@ -118,7 +119,7 @@ WHERE  c.cname  IN (
       FROM   Purchase p, Product pr
       WHERE  p.product = pr.pname 
 	   AND p.buyer = 'Joe Blow')
-     ```
+```    
 Note that we got Seattle twice for X co and A co
 
 ### Query Q2
@@ -130,7 +131,7 @@ SELECT c.city
  WHERE  c.cname = p.maker
    AND  p.pname = pu.product
    AND  pu.buyer = 'Joe Blow'
-   ```
+```
 Compare the  previous two queries.
 
 ### Question 1
@@ -146,7 +147,7 @@ WHERE  price > ALL(
 	SELECT price
      FROM   Product
      WHERE  maker = 'X co')
-     ```
+```
   </details>
   
  ### Question 2 
@@ -154,6 +155,7 @@ Find ‘copycat’ products, i.e. products made by competitors with the same nam
 
  <details>
   <summary>Solution</summary>
+	
 ```sql
  SELECT p1.pname
 FROM   Product p1
@@ -165,8 +167,9 @@ WHERE  p1.maker = 'A co'
 	   AND p1.pname = p2.pname)
 ```
 </details>
- ```sql
- DROP TABLE Purchase;
+	
+```sql
+DROP TABLE Purchase;
 CREATE TABLE Purchase (
 product char(20), 
 pdate date, 
@@ -177,8 +180,9 @@ INSERT INTO Purchase VALUES('bagel','2021-10-21',1,20);
 INSERT INTO Purchase VALUES('banana','2021-10-3',0.5,10);
 INSERT INTO Purchase VALUES('banana','2021-10-10',1,10);
 INSERT INTO Purchase VALUES('bagel','2021-10-25',1.5,20);
-  ```
-Note that we do not have a primary key.
+```
+
+	Note that we do not have a primary key.
 
 Get the number of purchases.
 
