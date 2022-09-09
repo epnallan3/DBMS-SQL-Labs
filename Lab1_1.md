@@ -38,6 +38,14 @@ SELECT category FROM product ORDER BY pname;
 SELECT DISTINCT category FROM product ORDER BY pname;
 ```
 
+### Multi Table join
 
-
-
+```sql
+create table company (
+    cname varchar(20) primary key, -- company name uniquely identifies the company.
+    stockprice decimal(10,2), -- stock price is in money 
+    country varchar(10)); -- country is just a string
+insert into company values ('GizmoWorks', 25.0, 'USA');
+insert into company values ('Canon', 65.0, 'Japan');
+insert into company values ('Hitachi', 15.0, 'Japan');
+```
