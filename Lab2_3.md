@@ -76,7 +76,7 @@ GROUP BY Product
 
 
 
-Find products and the sales that has sold over more than 10 units.
+Find products and the sales that has sold more than 10 units.
 <details>
   <summary>Solution</summary>
 
@@ -85,9 +85,10 @@ SELECT Product, SUM(Quantity*Price)
 FROM Purchase
 GROUP BY Product
 HAVING SUM(Quantity)> 10
-Product	SUM(Quantity*Price)
-```
+	
 
+```
+|Product | SUM(Quantity*Price)|
 | bagel  | 15.50 |
 |--------|-------|
 | banana | 10.00 |
