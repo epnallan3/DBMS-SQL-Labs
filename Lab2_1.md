@@ -362,3 +362,19 @@ WHERE  maker = cname
 	  	FROM   Product
 	  	WHERE  factory_loc = 'China');
       ```
+
+### To Delete or update multiple rows
+To disable safe updates or delete
+```sql
+SET SQL_SAFE_UPDATES=0;
+```
+
+To enable them back
+
+``sql
+SET SQL_SAFE_UPDATES=0;
+```
+
+
+
+
