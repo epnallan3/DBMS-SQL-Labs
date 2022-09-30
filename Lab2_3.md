@@ -42,9 +42,10 @@ WHERE product='bagel'
 
 2. Computing the aggregate.
 
+| Price| X | Quantity|    
+|------|---|---------|
 | 1.0  | x | 5 |
 | 1.5  | x | 7 |
-|------|---|---|
 | 15.5 |   |   |
 
 ### COUNT() vs COUNT(DISTINCT)
@@ -92,6 +93,7 @@ HAVING SUM(Quantity)> 10
 |--------|-------|
 | bagel  | 15.50 |
 | banana | 10.00 |
+	
   </details>
     
 Find the product with the most units sold.
