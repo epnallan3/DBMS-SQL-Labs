@@ -361,7 +361,7 @@ WHERE  maker = cname
 		SELECT maker
 	  	FROM   Product
 	  	WHERE  factory_loc = 'China');
-      ```
+```
 
 ### To Delete or update multiple rows
 To disable safe updates or delete
@@ -371,7 +371,7 @@ SET SQL_SAFE_UPDATES=0;
 
 To enable them back
 
-``sql
+```sql
 SET SQL_SAFE_UPDATES=0;
 ```
 
