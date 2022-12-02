@@ -111,13 +111,13 @@ Find supplier and products including not matched
   <summary>Solution</summary>
 
 ```sql
-  select * from product p 
+select * from product p 
 full outer join supplier s 
 on p.supplierid=s.id;
 ```
 Mysql does not support full outer join. It is can executed as follow:
 ```sql
-  select * from product p 
+select * from product p 
 left outer join supplier s 
 on p.supplierid=s.id
 union
