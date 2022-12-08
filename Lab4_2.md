@@ -9,6 +9,16 @@ Connect to DB
 import mysql.connector 
 cnx=mysql.connector.connect(user='root', password='1234', host='127.0.0.1', database='dbms')
 ```
+
+You may need to create a non-root account to access the DBMS (you can allow root to remotely access DB but this is not a greate idea).
+
+To create a user 
+```sql
+CREATE USER 'sammy'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+
+```
+
 Make sure to use a database in your local dbms.
 
 To run a query
