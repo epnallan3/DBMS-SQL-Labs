@@ -1,4 +1,3 @@
-# Lab 1.2
 
 ## Lecture 4
 ```sql
