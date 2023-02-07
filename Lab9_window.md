@@ -1,3 +1,6 @@
+Leap vs Lag 
+
+
 ``` sql
 drop table if exists sales;
 create table sales (
@@ -22,6 +25,8 @@ where cur.product=prev.product and cur.y=prev.y+1;
 ```sql
 select product, y, sales, lag(sales) over (partition by product order by y )   from sales;
 ```
+
+
 
 ```sql
 drop table seq;
@@ -73,7 +78,13 @@ window w as (   );
 
 ```
 
---- adding lag and lead
+### SQL RANK() versus ROW_NUMBER()
+```sql
+select *, rank() over  (order by x),
+ row_number() over (order by x)
+ from seq;
+```
 
+## References
 
 https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html
