@@ -1,4 +1,5 @@
 Purchase
+
 | Id | Product | Price | Quantity |
 |----|---------|-------|----------|
 | 1  | bagel   | 1.0   | 5        |
