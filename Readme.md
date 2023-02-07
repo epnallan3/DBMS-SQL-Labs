@@ -13,7 +13,7 @@
 |Nested Queries | [Lab2_2](Lab2_2)|
 |Aggregates | [Lab2_3](Lab2_3)|
 |SQL Examples (+ OuterJoin) | [Lab2_4](Lab2_4)|
-| Review SQL | [Lab 2.0] (Lab2_0)|
+| Review SQL | [Lab 2.0](Lab2_0)|
 |Division | [Lab2_5](Lab2_5)|
 
 
