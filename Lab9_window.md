@@ -85,6 +85,141 @@ select *, rank() over  (order by x),
  from seq;
 ```
 
+## More Example
+```sql
+CREATE TABLE emp (
+id int AUTO_increment Primary key,
+ename char(50) NOT NULL,
+department char(50),
+salary decimal(10, 2)
+);
+INSERT INTO emp (ename, department, salary) VALUES
+('Andy', 'Shipping', 5400),
+('Betty', 'Marketing', 6300),
+('Tracy', 'Shipping', 4800),
+('Mike', 'Marketing', 7100),
+('Sandy', 'Sales', 5400),
+('James', 'Shipping', 6600),
+('Carol', 'Sales', 4600);
+```
+```sql
+SELECT COUNT(*), SUM(salary),
+round(AVG(salary), 2) AS avg
+FROM emp;
+```
+```sql
+SELECT department, COUNT(*), SUM(salary),
+round(AVG(salary), 2) AS avg
+FROM emp
+GROUP BY department
+ORDER BY department;
+```
+```sql
+SELECT department, COUNT(*), SUM(salary),
+round(AVG(salary), 2) AS avg
+FROM emp
+GROUP BY department with Rollup
+ORDER BY department;
+```
+```sql
+SELECT ename, salary
+FROM emp
+ORDER BY salary DESC;
+```
+
+```sql
+SELECT ename, salary, SUM(salary) OVER ()
+FROM emp
+ORDER BY salary DESC;
+```
+```sql
+SELECT ename, salary,
+round(salary / SUM(salary) OVER () * 100, 2) AS pct
+FROM emp
+ORDER BY salary DESC;
+```
+
+
+```sql
+SELECT ename, salary,
+SUM(salary) OVER (ORDER BY salary DESC ROWS BETWEEN
+UNBOUNDED PRECEDING AND CURRENT ROW)
+FROM emp
+ORDER BY salary DESC;
+```
+
+```sql
+SELECT ename, salary,
+round(AVG(salary) OVER (), 2) AS avg
+FROM emp
+ORDER BY salary DESC;
+```
+
+```sql
+SELECT ename, salary,
+round(AVG(salary) OVER (), 2) AS avg,
+round(salary - AVG(salary) OVER (), 2) AS diff_avg
+FROM emp
+ORDER BY salary DESC;
+```
+```sql
+SELECT ename, salary,
+salary - LEAD(salary, 1) OVER
+(ORDER BY salary DESC) AS diff_next
+FROM emp
+ORDER BY salary DESC;
+```
+
+
+```sql
+SELECT ename, salary,
+salary - LAST_VALUE(salary) OVER w AS more,
+round((salary - LAST_VALUE(salary) OVER w) /
+LAST_VALUE(salary) OVER w * 100) AS pct_more
+FROM emp
+WINDOW w AS (ORDER BY salary DESC ROWS BETWEEN
+UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
+ORDER BY salary DESC;
+```
+
+```sql
+SELECT ename, department, salary,
+round(AVG(salary) OVER
+(PARTITION BY department), 2) AS avg,
+round(salary - AVG(salary) OVER
+(PARTITION BY department), 2) AS diff_avg
+FROM emp
+ORDER BY department, salary DESC;
+```
+
+
+```sql
+SELECT ename, department, salary,
+round(AVG(salary) OVER d, 2) AS avg,
+round(salary - AVG(salary) OVER d, 2) AS diff_avg
+FROM emp
+WINDOW d AS (PARTITION BY department)
+ORDER BY department, salary DESC;
+```
+
+
+```sql
+SELECT ename, department, salary,
+salary - LEAD(salary, 1) OVER
+(PARTITION BY department
+ORDER BY salary DESC) AS diff_next
+FROM emp
+ORDER BY department, salary DESC;
+```
+
+```sql
+SELECT ename, department, salary, RANK() OVER s AS dept_rank,
+RANK() OVER (ORDER BY salary DESC) AS global_rank
+FROM emp
+WINDOW s AS (PARTITION BY department ORDER BY salary DESC)
+ORDER BY department, salary DESC;
+```
+
 ## References
 
 https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html
