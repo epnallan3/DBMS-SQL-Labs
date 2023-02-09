@@ -90,12 +90,13 @@ HAVING SUM(Quantity)> 10
 	
 
 ```
+
 |Product | SUM(Quantity*Price)|
 |--------|-------|
 | bagel  | 15.50 |
 | banana | 10.00 |
 	
-  </details>
+</details>
     
 Find the product with the most units sold.
 <details>
