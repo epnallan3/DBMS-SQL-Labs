@@ -99,10 +99,12 @@ HAVING SUM(Quantity)> 10
     
 Find the product with the most units sold.
 <details>
-  <summary>Solution</summary>
+<summary>Solution</summary>
   
+
 ```sql
-SELECT Product, SUM(Quantity*Price)
+
+	SELECT Product, SUM(Quantity*Price)
 FROM Purchase
 GROUP BY Product
 HAVING SUM(Quantity)= (
@@ -113,7 +115,8 @@ HAVING SUM(Quantity)= (
 	 GROUP BY Product) t
 );
 ```
-  </details>
+ 
+</details>
   
 To understand the query, let us start with:
 ```sql
