@@ -4,7 +4,7 @@
 
 
 
-| In-Class SQL Labs           |
+| In-Class SQL Labs    |       |
 |----------|------------------|
 |  Create Database | [Lab 1](inclass/Lab1)|
 |  Foreign Keys | [Lab 1](inclass/Lab1)|
@@ -15,6 +15,8 @@
 |SQL Examples (+ OuterJoin) | [Lab2_4](Lab2_4)|
 | Review SQL | [Lab 2.0](Lab2_0)|
 |Division | [Lab2_5](Lab2_5)|
+
+|----------|-----------|
 |---------|-----------|
 | JSON    | Labs 7-9  |
 | MONGODB | Lab 10    |
