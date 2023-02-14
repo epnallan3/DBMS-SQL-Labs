@@ -4,10 +4,12 @@
 
 
 
-| SQL Labs |                 |
+| In-Class SQL Labs           |
 |----------|------------------|
-|  Create Database | [Lab 1](Lab1)|
-|  Foriegn Keys | [Lab 1](Lab1)|
+|  Create Database | [Lab 1](inclass/Lab1)|
+|  Foreign Keys | [Lab 1](inclass/Lab1)|
+
+
 | Join |[Lab 1.1](Lab1_1)|
 | Set | [Lab 2_1](Lab2_1)|
 |Nested Queries | [Lab2_2](Lab2_2)|
@@ -17,7 +19,7 @@
 |Division | [Lab2_5](Lab2_5)|
 
 
-|         |   6    |
+|         |      |
 |---------|-----------|
 | JSON    | Labs 7-9  |
 | MONGODB | Lab 10    |
