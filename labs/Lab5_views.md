@@ -4,7 +4,6 @@ This lab will introduce some more advanced features of SQL.
 
 ## Table of Contents
 
-- [Lab5: Views, Constraints, Procedures, Dynamic Columns, JSON and XML](#lab5-views-constraints-procedures-dynamic-columns-json-and-xml)
   - [Views](#views)
   - [Stored functions](#stored-functions)
   - [User defined variables](#user-defined-variables)
