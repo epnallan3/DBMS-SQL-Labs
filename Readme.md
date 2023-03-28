@@ -6,8 +6,8 @@
 | Join |[Lab 1](inclass/Lab1)|
 | Set | [Lab 2](inclass/Lab2)|
 |Nested Queries | [Lab2](inclass/Lab2)|
-|Aggregates | [Lab2_3](inclass/Lab2)|
-|SQL Examples (+ OuterJoin) | [Lab2](inclass/Lab4)|
+|Aggregates | [Lab2](inclass/Lab2)|
+|SQL Examples (+ OuterJoin) | [Lab2](inclass/Lab2)|
 |Division | [Lab2](inclass/Lab2)|
 | Interface with Python | [Lab3](inclass/Lab3)|
 | Window Function |[Lab4](inclass/Lab4)|
