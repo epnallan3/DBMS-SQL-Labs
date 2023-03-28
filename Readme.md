@@ -9,17 +9,19 @@
 |Aggregates | [Lab2](inclass/Lab2)|
 |SQL Examples (+ OuterJoin) | [Lab2](inclass/Lab2)|
 |Division | [Lab2](inclass/Lab2)|
-| Interface with Python | [Lab3](inclass/Lab3)|
-| Window Function |[Lab4](inclass/Lab4)|
+| Views | [ Lab 3](labs/Lab5_views.md) | 
+| Interface with Python | [Lab 4](inclass/Lab3)|
+| Window Function |[Lab 5](inclass/Lab4)|
+
 
 |----------|-----------|
-|---------|-----------|
-| JSON    | Labs 7-9  |
-| MONGODB | Lab 10    |
-| NEO4j   | Lab 11    |
+| Noraml Forms | (labs/Lab3_Normal_forms.md) |
+| JSON    | Lab (other/Lab11_neo4j)  |
+| MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
+| NEO4j   | Lab (other/Lab11_neo4j)   |
 
 
 
 
 
-Most of the mateials in this repository is from Prof. Nic Mcphee from the University of Minnesota at Morris
+Most of the materials in this repository is from Prof. Nic Mcphee from the University of Minnesota at Morris.
