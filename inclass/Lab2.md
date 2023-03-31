@@ -850,6 +850,7 @@ full outer join supplier s
 on p.supplierid=s.id;
 ```
 Mysql does not support full outer join. It is can executed as follow:
+	
 ```sql
 select * from product p 
 left outer join supplier s 
@@ -860,6 +861,8 @@ right outer join supplier s
 on p.supplierid=s.id;
 ```
   </details>
+	
+## Division	
   
  ```sql
  create table student (SID int primary key,Name varchar(10),Major
