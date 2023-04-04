@@ -1,4 +1,4 @@
-#Window  Function and Recurisve Queries
+# Window  Function and Recurisve Queries
 ## In Class Example
 
 ```sql
