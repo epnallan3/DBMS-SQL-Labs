@@ -12,7 +12,8 @@
 | Views | [ Lab 3](labs/Lab5_views.md) | 
 | Interface with Python | [Lab 4](inclass/Lab3)|
 | Window Function |[Lab 5](inclass/Lab4)|
-| Noraml Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
+| Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
+|Triggers |  |
 | JSON    | [Lab](other/Lab11_neo4j)  |
 | MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
 | NEO4j   | [Lab](other/Lab11_neo4j)   |
