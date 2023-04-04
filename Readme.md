@@ -15,7 +15,7 @@
 | Window Function |[Lab 5](inclass/Lab4)|
 | Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
 |Triggers |  |
-| JSON    | [To Do](other/Lab11_neo4j)  |
+| JSON    | [To Do](other/Lab_JSON-XML)  |
 | MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
 | NEO4j   | [Lab](other/Lab11_neo4j)   |
 
