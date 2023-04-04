@@ -1,4 +1,4 @@
-#Interactting with Python
+# Interactting with Python
 
 We will use mysql connector with python
 ```
@@ -69,6 +69,6 @@ cursor.execute(iquery)
 Becuase we have commited the changes, it would presist.
 
 
-# Connecting with Jupyter
+
 
 
