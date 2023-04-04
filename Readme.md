@@ -14,7 +14,7 @@
 | Interface with Jupyter| [Lab 4.1](inclass/Mysql-Jupyter.ipynb)|
 | Window Function |[Lab 5](inclass/Lab4)|
 | Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
-| Roll up| (Rollup)[Rollup]|
+| Roll up| [link](Rollup)|
 |Triggers |  |
 | JSON    | [To Do](other/Lab_JSON-XML)  |
 | MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
