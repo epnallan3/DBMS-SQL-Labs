@@ -1,4 +1,6 @@
-We will try out using mysql connector with python
+#Interactting with Python
+
+We will use mysql connector with python
 ```
 pip install mysql-connector-python
 ```
@@ -65,3 +67,8 @@ cursor = cnx.cursor()
 cursor.execute(iquery)
 ```
 Becuase we have commited the changes, it would presist.
+
+
+# Connecting with Jupyter
+
+
