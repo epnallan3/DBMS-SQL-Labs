@@ -11,11 +11,11 @@
 |Division | [Lab2](inclass/Lab2)|
 | Views | [ Lab 3](labs/Lab5_views.md) | 
 | Interface with Python | [Lab 4](inclass/Lab_Python)|
-| Interface with Jupyter| [Lab 4.1](https://nbviewer.org/urls/teachingow.github.io//DBMS-SQL-Labs/inclass/Mysql-Jupyter.ipynb)|
+| Interface with Jupyter| [Lab 4.1](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Mysql-Jupyter.ipynb)|
 | Window Function |[Lab 5](inclass/Lab4)|
 | Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
-| Roll up| [Rollup](https://nbviewer.org/urls/teachingow.github.io//DBMS-SQL-Labs/inclass/Rollup.ipynb)|
-|Triggers |  [link](https://nbviewer.org/urls/teachingow.github.io//DBMS-SQL-Labs/inclass/Triggers.ipynb)||
+| Roll up| [Rollup](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Rollup.ipynb)|
+|Triggers |  [link](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Triggers.ipynb)||
 | JSON    | [To Do](other/Lab_JSON-XML)  |
 | MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
 | NEO4j   | [Lab](other/Lab11_neo4j)   |
