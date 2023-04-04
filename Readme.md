@@ -16,7 +16,7 @@
 | Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
 | Roll up| [Rollup](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Rollup.ipynb)|
 |Triggers |  [link](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Triggers.ipynb)||
-| JSON    | [To Do](other/Lab_JSON-XML)  |
+| JSON    | [To Do](labs/Lab_JSON-XML.md)  |
 | MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
 | NEO4j   | [Lab](other/Lab11_neo4j)   |
 
