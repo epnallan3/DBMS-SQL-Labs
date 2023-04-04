@@ -10,7 +10,8 @@
 |SQL Examples (+ OuterJoin) | [Lab2](inclass/Lab2)|
 |Division | [Lab2](inclass/Lab2)|
 | Views | [ Lab 3](labs/Lab5_views.md) | 
-| Interface with Python & Jupyter| [Lab 4](inclass/Lab3)|
+| Interface with Python | [Lab 4](inclass/Lab_Python)|
+| Interface with Jupyter| [Lab 4](inclass/Mysql-Jupyter.ipynb)|
 | Window Function |[Lab 5](inclass/Lab4)|
 | Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
 |Triggers |  |
