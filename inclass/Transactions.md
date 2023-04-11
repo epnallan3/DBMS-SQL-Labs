@@ -50,6 +50,7 @@ commit;
 
 After executing the statements
 You should get the following when executing 'select * from bank;'
+
 |name|age|
 |----|---|
 |Bob|30|
