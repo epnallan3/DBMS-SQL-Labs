@@ -39,7 +39,7 @@ SET AUTOCOMMIT = OFF;
 To transfer 10$ from Bob to Joe
 
 ```sql
-start transcation;
+start transaction;
 
 update bank set amnt=amnt-10 where name='Bob';
 
@@ -59,7 +59,7 @@ You should get the following when executing 'select * from bank;'
 
 Execute the following statemnts
 ```sql
-start transcation;
+start transaction;
 select * from bank;
 update bank set amnt=amnt+10 where name='Bob';
 select * from bank;
