@@ -85,6 +85,10 @@ where cur.product=prev.product and cur.y=prev.y+1;
 ```
 
 ```sql
+select cur.product, cur.y, cur.sales, prev.sales from sales cur left outer join  sales prev on cur.y=prev.y+1 and cur.product=prev.product ;
+```
+
+```sql
 select product, y, sales, lag(sales) over 
 (partition by product order by y )   from sales;
 ```
