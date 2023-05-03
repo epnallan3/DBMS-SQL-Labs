@@ -348,9 +348,7 @@ Once you have the entries in your tables perform the examples in the Wikipedia p
 
 # To Do
 
-- [ ] Make sure your canvas group matches your github group and submit your groups repository URL
-- [ ] Also submit the database that contains your group's work
-- [ ] Do all the examples.  Make certain at least one person in your group has
+- [ ] Do all the examples.  
     - [ ] Created the View
     - [ ] Created the `Ticketize` function
     - [ ] Created the summary procedure
@@ -372,5 +370,5 @@ Once you have the entries in your tables perform the examples in the Wikipedia p
 - [ ] Do the following Exercises:
     - [ ] The Trigger Exercise
     - [ ] The Correlated Subquery Exercise
-    - [ ] The Dynamic Column Exercises
+
 
