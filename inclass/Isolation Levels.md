@@ -41,7 +41,7 @@ SELECT * FROM product WHERE id = 1;
 <td>
   
   ```sql
-
+Begin;
 UPDATE product SET price = 1000 WHERE id = 1;
 ```
  
@@ -52,7 +52,7 @@ UPDATE product SET price = 1000 WHERE id = 1;
     <td>
 
 ```sql
-BEGIN;
+
 SELECT  * FROM product  WHERE id = 1;
 ```
 
