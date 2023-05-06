@@ -383,4 +383,7 @@ Repeatable read|N|N|Y*|
 Serializable |N|N|N|N
 
 
+MySQL at REPEATABLE isolation level:
 
+- When using just select statement, phantom read doesn’t happen as SQL standard mentioned.
+- When the transaction modifies data (write/delete/update), we can write successfully to “unseen data” .the behavior is a mix of Repeatable Read (rows not modified are not visible) and Read Committed (modified rows are visible).
