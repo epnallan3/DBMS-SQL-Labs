@@ -162,7 +162,7 @@ SELECT COUNT(*) FROM product;
   
 ```sql
 BEGIN;
- INSERT INTO `product` VALUES (5,“Product”, 5);
+ INSERT INTO `product` VALUES (3,“C”, 5);
 commit;
 ```
  
@@ -203,7 +203,7 @@ SELECT COUNT(*) FROM product;
 
  ```sql
 BEGIN;
- INSERT INTO `product` VALUES (5,“Product”, 5);
+ INSERT INTO `product` VALUES (4,'D', 5);
 commit;
  ```
  </td>
@@ -220,4 +220,118 @@ SELECT  * FROM product;
   </tr>
 
 </table>
+<~---~>
+<table>
+ <tr>
+   <td colspan="2"> Example II </td>
+ </tr>
+  <tr>
+    <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
+<tr>
+<td>
+ 
+```sql 
+SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
+BEGIN;
+Insert into Product values (7,''
+```
+</td>
+  <td></td>
+</tr>
+<tr>
+<td> </td>
+<td>
+
+ ```sql
+ SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
+BEGIN;
+ SELECT COUNT(*) FROM product; 
+ INSERT INTO `product` VALUES (5,'E', 5);
+
+ ```
+ </td>
+</tr>
+ <tr> <td>
+
+```sql
+
+SELECT  * FROM product;
+ 
+ INSERT INTO `product` VALUES (6,'F', 6);
+```
+
+ </td>
+ <td></td>
+  </tr>
+
 </table>
+<~---~>
+<table>
+ <tr>
+   <td colspan="2"> Example </td>
+ </tr>
+  <tr>
+    <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
+<tr>
+<td>
+ 
+```sql 
+SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
+BEGIN;
+
+```
+</td>
+  <td></td>
+</tr>
+<tr>
+<td> </td>
+<td>
+
+ ```sql
+ SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
+BEGIN;
+
+ INSERT INTO `product` VALUES (10,'G', 5);
+
+ ```
+ </td>
+</tr>
+ <tr> <td>
+
+```sql
+
+ 
+ INSERT INTO `product` VALUES (10,'H', 6);
+```
+
+ </td>
+ <td></td>
+  </tr>
+
+ <tr>
+  <td> 
+   
+  ```sql
+   commit;
+   ```
+  </td>
+
+  <td> 
+   
+  ```sql
+   commit;
+   ```
+  </td>
+ 
+ </tr>
+ 
+</table>
+
+
+
+  <td> 
+  ```sql
+   commit;
+   ```
+  </td>
+
