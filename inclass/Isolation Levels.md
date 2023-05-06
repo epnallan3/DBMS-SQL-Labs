@@ -223,7 +223,7 @@ SELECT  * FROM product;
 <~---~>
 <table>
  <tr>
-   <td colspan="2"> Example II </td>
+   <td colspan="2"> Example I </td>
  </tr>
   <tr>
     <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
@@ -233,7 +233,7 @@ SELECT  * FROM product;
 ```sql 
 SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
 BEGIN;
-Insert into Product values (7,''
+Insert into Product values (7,'F',1);
 ```
 </td>
   <td></td>
@@ -268,7 +268,7 @@ SELECT  * FROM product;
 <~---~>
 <table>
  <tr>
-   <td colspan="2"> Example </td>
+   <td colspan="2"> Example II </td>
  </tr>
   <tr>
     <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
@@ -327,11 +327,60 @@ BEGIN;
  
 </table>
 
+<table>
+ <tr>
+   <td colspan="2"> Example III </td>
+ </tr>
+  <tr>
+    <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
+<tr>
+<td>
+ 
+```sql 
+SET SESSION TRANSACTION ISOLATION LEVEL Repeatable Read;
+BEGIN;
+SELECT  count(*) from Product;
+```
+</td>
+  <td></td>
+</tr>
+<tr>
+<td> </td>
+<td>
 
+ ```sql
+ SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
+BEGIN;
 
-  <td> 
-  ```sql
+ INSERT INTO `product` VALUES (11,'G', 5);
+commit;
+ ```
+ </td>
+</tr>
+ <tr> <td>
+
+```sql
+
+ 
+SELECT  count(*) from Product;
    commit;
-   ```
-  </td>
+```
+
+ </td>
+ <td></td>
+  </tr>
+
+
+ 
+</table>
+
+
+|Isolation Level | dirty read | non repeatable reads |Phantoms|
+|-----------------|------------|--------------------|----------|
+|Read uncommited| Y |Y|Y|
+|Read Commited|N | Y|Y|
+Repeatable read|N|N|Y*|
+Serializable |N|N|N|N
+
+
 
