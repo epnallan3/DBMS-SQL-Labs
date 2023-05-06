@@ -140,3 +140,96 @@ SELECT * from Product;
  </tr>   
 </table>
 
+
+
+<table>
+ <tr>
+   <td colspan="2"> Repeatable Read </td>
+ </tr>
+  <tr>
+    <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
+
+<tr>
+<td>
+  
+```sql 
+SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+BEGIN;
+SELECT COUNT(*) FROM product; 
+```
+
+</td>
+  <td></td>
+</tr>
+
+<tr>
+<td> </td>
+<td>
+  
+```sql
+BEGIN;
+ INSERT INTO `product` VALUES (5,“Product”, 5);
+commit;
+```
+ 
+  </td>
+</tr>
+  
+  <tr>
+    <td>
+
+```sql
+
+SELECT  * FROM product;
+```
+
+ </td>
+ <td></td>
+  </tr>
+  
+
+  
+
+</table>
+
+
+
+<table>
+ <tr>
+   <td colspan="2"> Serializable </td>
+ </tr>
+  <tr>
+    <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
+
+<tr>
+<td>
+  
+```sql 
+SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
+BEGIN;
+SELECT COUNT(*) FROM product; 
+```
+
+</td>
+  <td></td>
+</tr>
+
+<tr>
+<td> </td>
+<td>
+  
+```sql
+BEGIN;
+ INSERT INTO `product` VALUES (5,“Product”, 5);
+commit;
+```
+   </td>
+</tr>
+   <tr>
+   <td>
+```sql
+SELECT  * FROM product;
+```
+ </td>
+  </tr>
+</table>
