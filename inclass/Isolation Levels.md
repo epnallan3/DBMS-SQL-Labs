@@ -233,7 +233,7 @@ SELECT  * FROM product;
 ```sql 
 SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
 BEGIN;
-Insert into Product values (7,'F',1);
+
 ```
 </td>
   <td></td>
