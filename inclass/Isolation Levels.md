@@ -45,11 +45,7 @@ Begin;
 UPDATE product SET price = 1000 WHERE id = 1;
 ```
  
-  </td>
- </tr>
-  
- <tr>
-    <td>
+  </td> </tr> <tr>   <td>
 
 ```sql
 
@@ -162,9 +158,7 @@ SELECT COUNT(*) FROM product;
   <td></td>
 </tr>
 
-<tr>
-<td> </td>
-<td>
+<tr> <td> </td> <td>
   
 ```sql
 BEGIN;
@@ -173,10 +167,7 @@ commit;
 ```
  
   </td>
-</tr>
-  
-  <tr>
-    <td>
+</tr> <tr> <td>
 
 ```sql
 
@@ -186,13 +177,8 @@ SELECT  * FROM product;
  </td>
  <td></td>
   </tr>
-  
-
-  
 
 </table>
-
-
 
 <table>
  <tr>
@@ -200,36 +186,38 @@ SELECT  * FROM product;
  </tr>
   <tr>
     <td> Terminal 1 </td> <td> Terminal 2 </td> </tr>
-
 <tr>
 <td>
-  
+ 
 ```sql 
 SET SESSION TRANSACTION ISOLATION LEVEL Serializable;
 BEGIN;
 SELECT COUNT(*) FROM product; 
 ```
-
 </td>
   <td></td>
 </tr>
-
 <tr>
 <td> </td>
 <td>
-  
-```sql
+
+ ```sql
 BEGIN;
  INSERT INTO `product` VALUES (5,“Product”, 5);
 commit;
-```
-   </td>
+ ```
+ </td>
 </tr>
-   <tr>
-   <td>
+ <tr> <td>
+
 ```sql
+
 SELECT  * FROM product;
 ```
+
  </td>
+ <td></td>
   </tr>
+
+</table>
 </table>
