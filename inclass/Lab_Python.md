@@ -43,7 +43,7 @@ cnx.close()
 
 Insert data into database
 ```python
-iquery='insert into  company values('BMW',10,'Germany');'
+iquery="insert into  company values('BMW',10,'Germany');"
 cursor = cnx.cursor()
 cursor.execute(iquery)
 ```
