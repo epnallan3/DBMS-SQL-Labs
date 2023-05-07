@@ -1,4 +1,4 @@
-# Interactting with Python
+# Interacting with Python
 
 We will use mysql connector with python
 ```
