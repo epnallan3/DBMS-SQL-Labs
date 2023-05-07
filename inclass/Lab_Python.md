@@ -12,7 +12,7 @@ import mysql.connector
 cnx=mysql.connector.connect(user='root', password='1234', host='127.0.0.1', database='dbms')
 ```
 
-You may need to create a non-root account to access the DBMS (you can allow root to remotely access DB but this is not a greate idea).
+You may need to create a non-root account to access the DBMS (you can allow root to remotely access DB but this is not a great idea).
 
 To create a user 
 ```sql
