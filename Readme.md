@@ -27,4 +27,4 @@
 
 
 
-Some of the materials in adapoted is from Prof. Nic Mcphee from the University of Minnesota at Morris.
+
