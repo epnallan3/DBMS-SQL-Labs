@@ -16,7 +16,7 @@
 | Normal Forms | [Normal Forns](labs/Lab3_Normal_forms.md) |
 | Roll up| [Rollup](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Rollup.ipynb)|
 |Triggers |  [link](https://nbviewer.org/urls/teachingow.github.io/DBMS-SQL-Labs/inclass/Triggers.ipynb)||
-| Transcations | [Link](inclass/Transactions)|
+| Transactions | [Link](inclass/Transactions)|
 |Isolation Levels| [link](https://medium.com/@huynhquangthao/mysql-testing-isolation-levels-650a0d0fae75)|
 | JSON    | [Link* Needs improvement](labs/Lab_JSON-XML.md)  |
 | MONGODB | [Mongo DB](labs/Lab10_mongoDB.md)  |
